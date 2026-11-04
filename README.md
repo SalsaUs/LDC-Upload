@@ -2,6 +2,8 @@
 
 Static website (plain HTML, CSS, JS). No framework needed to host it.
 
+https://salsaus.github.io/LDC-Upload/
+
 ## Structure
 - `index.html`, `services/`, `locations/`, `directory/`, `faq/`, `about/`, `contact/`, `list-your-business/`, `privacy/`: generated pages
 - `css/styles.css`: all styling (colours are variables at the top)
