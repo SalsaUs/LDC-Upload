@@ -5,7 +5,9 @@ Static website (plain HTML, CSS, JS). No framework needed to host it.
 https://salsaus.github.io/LDC-Upload/
 
 --------NOTE BEFORE UPLOAD--------
+
 NoIndex is set in this state prior to upload
+
 noforward should be attached to links to company websites (IF they are to be attached)
 
 
