@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+
+<head>
+  <!-- ============================================================
+       META & SEO
+       ============================================================ -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Directory of Land Surveyors &amp; Engineers in Victoria | Land Development Consultants</title>
+  <meta name="description" content="Browse land surveyors, civil engineers and town planners across Victoria by service and location, or get matched free.">
+  <link rel="canonical" href="https://salsaus.github.io/LDC-Directory/directory/">
+  <meta name="robots" content="noindex">
+  <meta name="geo.region" content="AU-VIC">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Directory of Land Surveyors &amp; Engineers in Victoria | Land Development Consultants">
+  <meta property="og:description" content="Browse land surveyors, civil engineers and town planners across Victoria by service and location, or get matched free.">
+  <meta property="og:url" content="https://salsaus.github.io/LDC-Directory/directory/">
+  <meta property="og:image" content="https://salsaus.github.io/LDC-Directory/images/BlueWeta.png">
+  <meta property="og:locale" content="en_AU">
+  <meta name="twitter:card" content="summary">
+
+  <!-- ============================================================
+       ICONS, FONTS & STYLES
+       ============================================================ -->
+  <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../images/Logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+
+  <!-- ============================================================
+       STRUCTURED DATA (JSON-LD): Organization + Breadcrumbs
+       ============================================================ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://salsaus.github.io/LDC-Directory/#org",
+        "name": "Land Development Consultants",
+        "url": "https://salsaus.github.io/LDC-Directory/",
+        "logo": "https://salsaus.github.io/LDC-Directory/images/BlueWeta.png",
+        "email": "services@blueweta.com",
+        "areaServed": {
+          "@type": "State",
+          "name": "Victoria"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://salsaus.github.io/LDC-Directory/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Directory",
+            "item": "https://salsaus.github.io/LDC-Directory/directory/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- ============================================================
+       HEADER & NAVIGATION
+       ============================================================ -->
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="logo" href="../" aria-label="Land Development Consultants home">
+        <img src="../images/BlueWeta.png" alt="Land Development Consultants" height="48">
+        Land Development Consultants
+      </a>
+
+      <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+
+      <nav id="nav" class="nav" aria-label="Main">
+        <a href="../directory/">Directory</a>
+        <a href="../services/">Services</a>
+        <a href="../locations/">Locations</a>
+        <a href="../about/">About</a>
+        <a href="../faq/">FAQ</a>
+        <a class="btn btn-small" href="../contact/">Get matched</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- ============================================================
+       MAIN CONTENT
+       ============================================================ -->
+  <main id="main">
+    <div class="inner">
+      <div class="wrap">
+
+        <!-- Breadcrumbs -->
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <a href="../">Home</a> ›
+          <a href="../directory/">Directory</a>
+        </nav>
+
+        <!-- Page title & intro -->
+        <h1>Victorian Surveyors &amp; Engineers Directory</h1>
+        <p class="lead">
+          Browse licensed land surveyors, engineers and planners by service and location.
+          Can't decide? <a href="../contact/">We'll match you for free.</a>
+        </p>
+
+        <!-- Placeholder-data notice -->
+        <p class="small" style="background:#fff7e0;border:1px solid #f0b429;padding:10px 14px;border-radius:8px">
+          Sample listings: these are placeholder names to show how the directory will look. They are not real businesses.
+        </p>
+
+
+        <!-- --------------------------------------------------------
+             FILTERS: search, service, location
+             -------------------------------------------------------- -->
+        <div class="card filters">
+
+          <label>Search
+            <input id="dq" type="search" placeholder="Firm name">
+          </label>
+
+          <label>Service
+            <select id="ds">
+              <option value="">All services</option>
+              <option value="land-subdivision">Land Subdivision</option>
+              <option value="boundary-marking-disputes">Boundary Marking & Re-establishment</option>
+              <option value="easements">Easements: Create or Remove</option>
+              <option value="title-amendments">Title Amendments</option>
+              <option value="feature-and-level-survey">Feature & Level Surveys</option>
+              <option value="flood-level-survey">Flood Level Surveys</option>
+              <option value="building-set-out">Building Set-out</option>
+              <option value="laser-scanning-3d-modelling">Laser Scanning & 3D Modelling</option>
+              <option value="aerial-drone-survey">Aerial Drone Survey</option>
+              <option value="volume-surveys">Volume Surveys</option>
+              <option value="retaining-wall-design">Retaining Wall Design</option>
+              <option value="driveway-roading-services-design">Driveway, Roading & Services Design</option>
+              <option value="town-planning-permits">Town Planning & Permits</option>
+              <option value="geotechnical-testing">Geotechnical Testing</option>
+            </select>
+          </label>
+
+          <label>Location
+            <select id="dl">
+              <option value="">All of Victoria</option>
+              <option value="melbourne">Melbourne</option>
+              <option value="geelong">Geelong & Surf Coast</option>
+              <option value="ballarat">Ballarat</option>
+              <option value="bendigo">Bendigo</option>
+              <option value="mornington-peninsula">Mornington Peninsula</option>
+              <option value="gippsland">Gippsland</option>
+              <option value="shepparton">Shepparton & Goulburn Valley</option>
+              <option value="werribee">Werribee & Melbourne West</option>
+              <option value="casey-cardinia">Casey & Cardinia</option>
+              <option value="wodonga">Wodonga & North East Victoria</option>
+            </select>
+          </label>
+
+        </div>
+
+        <!-- Result count (updated by the filter script at the bottom) -->
+        <p id="dn" class="small" role="status">30 firms found</p>
+
+
+        <!-- --------------------------------------------------------
+             FIRM LIST
+             Each .item carries data attributes used by the filter script:
+               data-q = searchable name/type text (lowercase)
+               data-s = space-separated service slugs
+               data-l = space-separated location slugs
+             -------------------------------------------------------- -->
+        <div class="scroll-wrap">
+          <div class="scroll-frame">
+            <div class="scrollbox" tabindex="0" role="region" aria-label="Firm list">
+              <div id="dlist" class="grid">
+
+                <!-- Firm 1: Example Cadastral Partners -->
+                <div class="item" data-q="example cadastral partners surveying" data-s="boundary-marking-disputes feature-and-level-survey building-set-out flood-level-survey" data-l="geelong ballarat melbourne">
+                  <div class="tile firm-tile">
+                    <h3><a href="../contact/?firm=example-cadastral-partners" rel="nofollow">Example Cadastral Partners</a></h3>
+                    <p class="firm-spec"><strong>Surveying</strong></p>
+                    <p class="firm-loc">Geelong & Surf Coast, Ballarat, Melbourne</p>
+                    <details class="firm-services">
+                      <summary>Services</summary>
+                      <ul>
+                        <li>Boundary Marking & Re-establishment</li>
+                        <li>Feature & Level Surveys</li>
+                        <li>Building Set-out</li>
+                        <li>Flood Level Surveys</li>
+                      </ul>
+                    </details>
+                    <a class="firm-profile" href="../directory/example-cadastral-partners/">View profile &rarr;</a>
+                    <p class="small firm-cta">Request a quote &rarr;</p>
+                  </div>
+                </div>
+
+                <!-- Firm 2: Sample Survey Group -->
+                <div class="item" data-q="sample survey group surveying" data-s="land-subdivision boundary-marking-disputes easements title-amendments" data-l="melbourne casey-cardinia werribee">
+                  <div class="tile firm-tile">
+                    <h3><a href="../contact/?firm=sample-survey-group" rel="nofollow">Sample Survey Group</a></h3>
+                    <p class="firm-spec"><strong>Surveying</strong></p>
+                    <p class="firm-loc">Melbourne, Casey & Cardinia, Werribee & Melbourne West</p>
+                    <details class="firm-services">
+                      <summary>Services</summary>
+                      <ul>
+                        <li>Land Subdivision</li>
+                        <li>Boundary Marking & Re-establishment</li>
+                        <li>Easements: Create or Remove</li>
+                        <li>Title Amendments</li>
+                      </ul>
+                    </details>
+                    <p class="small firm-cta">Request a quote &rarr;</p>
+                  </div>
+                </div>
+
+                <!-- Firm 3: Placeholder Geospatial -->
+                <div class="item" data-q="placeholder geospatial surveying" data-s="aerial-drone-survey laser-scanning-3d-modelling volume-surveys feature-and-level-survey" data-l="bendigo shepparton melbourne">
+                  <div class="tile firm-tile">
+                    <h3><a href="../contact/?firm=placeholder-geospatial" rel="nofollow">Placeholder Geospatial</a></h3>
+                    <p class="firm-spec"><strong>Surveying</strong></p>
+                    <p class="firm-loc">Bendigo, Shepparton & Goulburn Valley, Melbourne</p>
+                    <details class="firm-services">
+                      <summary>Services</summary>
+                      <ul>
+                        <li>Aerial Drone Survey</li>
+                        <li>Laser Scanning & 3D Modelling</li>
+                        <li>Volume Surveys</li>
+                        <li>Feature & Level Surveys</li>
+                      </ul>
+                    </details>
+                    <p class="small firm-cta">Request a quote &rarr;</p>
+                  </div>
+                </div>
+
+                <!-- Firm 4: Demo Civil Engineering -->
+                <div class="item" data-q="demo civil engineering engineering" data-s="driveway-roading-services-design retaining-wall-design geotechnical-testing" data-l="melbourne mornington-peninsula casey-cardinia">
+                  <div class="tile firm-tile">
+                    <h3><a href="../contact/?firm=demo-civil-engineering" rel="nofollow">Demo Civil Engineering</a></h3>
+                    <p class="firm-spec"><strong>Engineering</strong></p>
+                    <p class="firm-loc">Melbourne, Mornington Peninsula, Casey & Cardinia</p>
+                    <details class="firm-services">
+                      <summary>Services</summary>
+                      <ul>
+                        <li>Driveway, Roading & Services Design</li>
+                        <li>Retaining Wall Design</li>
+                        <li>Geotechnical Testing</li>
+                      </ul>
+                    </details>
+                    <p class="small firm-cta">Request a quote &rarr;</p>
+                  </div>
+                </div>
+
+                <!-- Firm 5: Sample Geotech & Structures -->
+                <div class="item" data-q="sample geotech &amp; structures engineering" data-s="geotechnical-testing retaining-wall-design" data-l="gippsland wodonga shepparton">
+                  <div class="tile firm-tile">
+                    <h3><a href="../contact/?firm=sample-geotech-and-structures" rel="nofollow">Sample Geotech & Structures</a></h3>
+                    <p class="firm-spec"><strong>Engineering</strong></p>
+                    <p class="firm-loc">Gippsland, Wodonga & North East Victoria, Shepparton & Goulburn Valley</p>
+                    <details class="firm-services">
+                      <summary>Services</summary>
+                      <ul>
+                        <li>Geotechnical Testing</li>
+                        <li>Retaining Wall Design</li>
+                      </ul>
+                    </details> 
+                    <p class="small firm-cta">Request a quote &rarr;</p>
+                  </div>
+                </div>
+
+                <!-- Firm 6: Example Land Studio -->
+                <div class="item" data-q="example land studio surveying &amp; engineering" data-s="town-planning-permits land-subdivision" data-l="melbourne mornington-peninsula geelong">
+                  <div class="tile firm-tile">
+                    <h3><a href="../contact/?firm=example-land-studio" rel="nofollow">Example Land Studio</a></h3>
+                    <p class="firm-spec"><strong>Surveying & Engineering</strong></p>
+                    <p class="firm-loc">Melbourne, Mornington Peninsula, Geelong & Surf Coast</p>
+                    <details class="firm-services">
+                      <summary>Services</summary>
+                      <ul>
+                        <li>Town Planning & Permits</li>
+                        <li>Land Subdivision</li>
+                      </ul>
+                    </details>
+ 
+                    <p class="small firm-cta">Request a quote &rarr;</p>
+                  </div>
+                </div>
+
+                <!-- Firm 7: Placeholder Land Development Co -->
+                <div class="item" data-q="placeholder land development co surveying" data-s="land-subdivision town-planning-permits easements" data-l="ballarat bendigo wodonga">
+                  <div class="tile firm-tile">
+                    <h3><a href="../contact/?firm=placeholder-land-development" rel="nofollow">Placeholder Land Development Co</a></h3>
+                    <p class="firm-spec"><strong>Surveying</strong></p>
+                    <p class="firm-loc">Ballarat, Bendigo, Wodonga & North East Victoria</p>
+                    <details class="firm-services">
+                      <summary>Services</summary>
+                      <ul>
+                        <li>Land Subdivision</li>
+                        <li>Town Planning & Permits</li>
+                        <li>Easements: Create or Remove</li>
+                      </ul>
+                    </details>
+                    <p class="small firm-cta">Request a quote &rarr;</p>
+                  </div>
+                </div>
+
+                <!-- Firm 8: Demo Regional Survey -->
+                <div class="item" data-q="demo regional survey surveying" data-s="land-subdivision boundary-marking-disputes title-amendments building-set-out" data-l="gippsland wodonga shepparton bendigo">
+                  <div class="tile firm-tile">
+                    <h3><a href="../contact/?firm=demo-regional-survey" rel="nofollow">Demo Regional Survey</a></h3>
+                    <p class="firm-spec"><strong>Surveying</strong></p>
+                    <p class="firm-loc">Gippsland, Wodonga & North East Victoria, Shepparton & Goulburn Valley +1 more</p>
+                    <details class="firm-services">
+                      <summary>Services</summary>
+                      <ul>
+                        <li>Land Subdivision</li>
+                        <li>Boundary Marking & Re-establishment</li>
+                        <li>Title Amendments</li>
+                        <li>Building Set-out</li>
+                      </ul>
+                    </details>
+ 
+                    <p class="small firm-cta">Request a quote &rarr;</p>
+                  </div>
+                </div>
+
+                <!-- Firm 9: Sample Boundary Surveys -->
+                <div class="item" data-q="sample boundary surveys surveying" data-s="boundary-marking-disputes title-amendments easements" data-l="melbourne werribee casey-cardinia">
+                  <div class="tile firm-tile">
+                    <h3><a href="../contact/?firm=sample-boundary-surveys" rel="nofollow">Sample Boundary Surveys</a></h3>
+                    <p class="firm-spec"><strong>Surveying</strong></p>
+                    <p class="firm-loc">Melbourne, Werribee & Melbourne West, Casey & Cardinia</p>
+                    <details class="firm-services">
+                      <summary>Services</summary>
+                      <ul>
+                        <li>Boundary Marking & Re-establishment</li>
+                        <li>Title Amendments</li>
+                        <li>Easements: Create or Remove</li>
+                      </ul>
+                    </details>
+ 
+                    <p class="small firm-cta">Request a quote &rarr;</p>
+                  </div>
+                </div>
+
+                <!-- Firm 10: Example Level & Contour Co -->
+                <div class="item" data-q="example level &amp; contour co surveying" data-s="feature-and-level-survey flood-level-survey building-set-out" data-l="melbourne mornington-peninsula">
+                  <div class="tile firm-tile">
+                    <h3><a href="../contact/?firm=example-level-and-contour" rel="nofollow">Example Level & Contour Co</a></h3>
+                    <p class="firm-spec"><strong>Surveying</strong></p>
+                    <p class="firm-loc">Melbourne, Mornington Peninsula</p>
+                    <details class="firm-services">
+                      <summary>Services</summary>
+                      <ul>
+                        <li>Feature & Level Surveys</li>
+                        <li>Flood Level Surveys</li>
+                        <li>Building Set-out</li>
+                      </ul>
+                    </details>
+                    <p class="small firm-cta">Request a quote &rarr;</p>
+                  </div>
+                </div>
+
+                <!-- Firm 11: Demo Subdivision Surveyors -->
+                <div class="item" data-q="demo subdivision surveyors surveying &amp; engineering" data-s="land-subdivision title-amendments easements" data-l="geelong ballarat bendigo">
+                  <div class="tile firm-tile">
+                    <h3><a href="../contact/?firm=demo-subdivision-surveyors" rel="nofollow">Demo Subdivision Surveyors</a></h3>
+                    <p class="firm-spec"><strong>Surveying & Engineering</strong></p>
+                    <p class="firm-loc">Geelong & Surf Coast, Ballarat, Bendigo</p>
+                    <details class="firm-services">
+                      <summary>Services</summary>
+                      <ul>
+                        <li>Land Subdivision</li>
+                        <li>Title Amendments</li>
+                        <li>Easements: Create or Remove</li>
+                      </ul>
+                    </details>
+ 
+                    <p class="small firm-cta">Request a quote &rarr;</p>
+                  </div>
+                </div>
+
+                <!-- Firm 12: Placeholder Cadastral Group -->
+                <div class="item" data-q="placeholder cadastral group surveying" data-s="boundary-marking-disputes land-subdivision" data-l="gippsland casey-cardinia mornington-peninsula">
+                  <div class="tile firm-tile">
+                    <h3><a href="../contact/?firm=placeholder-cadastral-group" rel="nofollow">Placeholder Cadastral Group</a></h3>
+                    <p class="firm-spec"><strong>Surveying</strong></p>
+                    <p class="firm-loc">Gippsland, Casey & Cardinia, Mornington Peninsula</p>
+                    <details class="firm-services">
+                      <summary>Services</summary>
+                      <ul>
+                        <li>Boundary Marking & Re-establishment</li>
+                        <li>Land Subdivision</li>
+                      </ul>
+                    </details>
+ 
+                    <p class="small firm-cta">Request a quote &rarr;</p>
+                  </div>
+                </div>
+
+                <!-- Firm 13: Sample Title & Easement Surveys -->
+                <div class="item" data-q="sample title &amp; easement surveys surveying" data-s="title-amendments easements land-subdivision" data-l="melbourne wodonga">
+                  <div class="tile firm-tile">
+                    <h3><a href="../contact/?firm=sample-title-and-easement" rel="nofollow">Sample Title & Easement Surveys</a></h3>
+                    <p class="firm-spec"><strong>Surveying</strong></p>
+                    <p class="firm-loc">Melbourne, Wodonga & North East Victoria</p>
+                    <details class="firm-services">
+                      <summary>Services</summary>
+                      <ul>
+                        <li>Title Amendments</li>
+                        <li>Easements: Create or Remove</li>
+                        <li>Land Subdivision</li>
+                      </ul>
+                    </details>
+ 
+                    <p class="small firm-cta">Request a quote &rarr;</p>
+                  </div>
+                </div>
+
+                <!-- Firm 14: Example Flood & Feature Surveys -->
+                <div class="item" data-q="example flood &amp; feature surveys surveying &amp; engineering" data-s="flood-level-survey feature-and-level-survey" data-l="shepparton bendigo wodonga">
+                  <div class="tile firm-tile">
+                    <h3><a href="../contact/?firm=example-flood-and-feature" rel="nofollow">Example Flood & Feature Surveys</a></h3>
+                    <p class="firm-spec"><strong>Surveying & Engineering</strong></p>
+                    <p class="firm-loc">Shepparton & Goulburn Valley, Bendigo, Wodonga & North East Victoria</p>
+                    <details class="firm-services">
+                      <summary>Services</summary>
+                      <ul>
+                        <li>Flood Level Surveys</li>
+                        <li>Feature & Level Surveys</li>
+                      </ul>
+                    </details>
+ 
+                    <p class="small firm-cta">Request a quote &rarr;</p>
+                  </div>
+                </div>
+
+                <!-- Firm 15: Demo Drone Mapping -->
+                <div class="item" data-q="demo drone mapping surveying" data-s="aerial-drone-survey volume-surveys feature-and-level-survey" data-l="melbourne geelong ballarat">
+                  <div class="tile firm-tile">
+                    <h3><a href="../contact/?firm=demo-drone-mapping" rel="nofollow">Demo Drone Mapping</a></h3>
+                    <p class="firm-spec"><strong>Surveying</strong></p>
+                    <p class="firm-loc">Melbourne, Geelong & Surf Coast, Ballarat</p>
+                    <details class="firm-services">
+                      <summary>Services</summary>
+                      <ul>
+                        <li>Aerial Drone Survey</li>
+                        <li>Volume Surveys</li>
+                        <li>Feature & Level Surveys</li>
+                      </ul>
+                    </details>
+ 
+                    <p class="small firm-cta">Request a quote &rarr;</p>
+                  </div>
+                </div>
+
+                <!-- Firm 16: Placeholder 3D Scanning Services -->
+                <div class="item" data-q="placeholder 3d scanning services surveying" data-s="laser-scanning-3d-modelling feature-and-level-survey" data-l="melbourne werribee">
+                  <div class="tile firm-tile">
+                    <h3><a href="../contact/?firm=placeholder-scanning-services" rel="nofollow">Placeholder 3D Scanning Services</a></h3>
+                    <p class="firm-spec"><strong>Surveying</strong></p>
+                    <p class="firm-loc">Melbourne, Werribee & Melbourne West</p>
+                    <details class="firm-services">
+                      <summary>Services</summary>
+                      <ul>
+                        <li>Laser Scanning & 3D Modelling</li>
+                        <li>Feature & Level Surveys</li>
+                      </ul>
+                    </details>
+ 
+                    <p class="small firm-cta">Request a quote &rarr;</p>
+                  </div>
+                </div>
+
+                <!-- Firm 17: Sample Set-out Specialists -->
+                <div class="item" data-q="sample set-out specialists surveying &amp; engineering" data-s="building-set-out feature-and-level-survey boundary-marking-disputes" data-l="casey-cardinia mornington-peninsula gippsland">
+                  <div class="tile firm-tile">
+                    <h3><a href="../contact/?firm=sample-set-out-specialists" rel="nofollow">Sample Set-out Specialists</a></h3>
+                    <p class="firm-spec"><strong>Surveying & Engineering</strong></p>
+                    <p class="firm-loc">Casey & Cardinia, Mornington Peninsula, Gippsland</p>
+                    <details class="firm-services">
+                      <summary>Services</summary>
+                      <ul>
+                        <li>Building Set-out</li>
+                        <li>Feature & Level Surveys</li>
+                        <li>Boundary Marking & Re-establishment</li>
+                      </ul>
+                    </details>
+ 
+                    <p class="small firm-cta">Request a quote &rarr;</p>
+                  </div>
+                </div>
+
+                <!-- Firm 18: Example Volume Surveys -->
+                <div class="item" data-q="example volume surveys surveying" data-s="volume-surveys aerial-drone-survey" data-l="ballarat bendigo shepparton">
+                  <div class="tile firm-tile">
+                    <h3><a href="../contact/?firm=example-volume-surveys" rel="nofollow">Example Volume Surveys</a></h3>
+                    <p class="firm-spec"><strong>Surveying</strong></p>
+                    <p class="firm-loc">Ballarat, Bendigo, Shepparton & Goulburn Valley</p>
+                    <details class="firm-services">
+                      <summary>Services</summary>
+                      <ul>
+                        <li>Volume Surveys</li>
+                        <li>Aerial Drone Survey</li>
+                      </ul>
+                    </details>
+ 
+                    <p class="small firm-cta">Request a quote &rarr;</p>
+                  </div>
+                </div>
+
+                <!-- Firm 19: Sample Civil Design -->
+                <div class="item" data-q="sample civil design engineering" data-s="driveway-roading-services-design retaining-wall-design" data-l="melbourne werribee casey-cardinia">
+                  <div class="tile firm-tile">
+                    <h3><a href="../contact/?firm=sample-civil-design" rel="nofollow">Sample Civil Design</a></h3>
+                    <p class="firm-spec"><strong>Engineering</strong></p>
+                    <p class="firm-loc">Melbourne, Werribee & Melbourne West, Casey & Cardinia</p>
+                    <details class="firm-services">
+                      <summary>Services</summary>
+                      <ul>
+                        <li>Driveway, Roading & Services Design</li>
+                        <li>Retaining Wall Design</li>
+                      </ul>
+                    </details>
+ 
+                    <p class="small firm-cta">Request a quote &rarr;</p>
+                  </div>
+                </div>
+
+                <!-- Firm 20: Example Structural Partners -->
+                <div class="item" data-q="example structural partners engineering &amp; surveying" data-s="retaining-wall-design geotechnical-testing" data-l="geelong melbourne">
+                  <div class="tile firm-tile">
+                    <h3><a href="../contact/?firm=example-structural-partners" rel="nofollow">Example Structural Partners</a></h3>
+                    <p class="firm-spec"><strong>Engineering & Surveying</strong></p>
+                    <p class="firm-loc">Geelong & Surf Coast, Melbourne</p>
+                    <details class="firm-services">
+                      <summary>Services</summary>
+                      <ul>
+                        <li>Retaining Wall Design</li>
+                        <li>Geotechnical Testing</li>
+                      </ul>
+                    </details>
+ 
+                    <p class="small firm-cta">Request a quote &rarr;</p>
+                  </div>
+                </div>
+
+                <!-- Firm 21: Demo Geotechnical Services -->
+                <div class="item" data-q="demo geotechnical services engineering" data-s="geotechnical-testing" data-l="melbourne gippsland mornington-peninsula">
+                  <div class="tile firm-tile">
+                    <h3><a href="../contact/?firm=demo-geotechnical" rel="nofollow">Demo Geotechnical Services</a></h3>
+                    <p class="firm-spec"><strong>Engineering</strong></p>
+                    <p class="firm-loc">Melbourne, Gippsland, Mornington Peninsula</p>
+                    <details class="firm-services">
+                      <summary>Services</summary>
+                      <ul>
+                        <li>Geotechnical Testing</li>
+                      </ul>
+                    </details>
+ 
+                    <p class="small firm-cta">Request a quote &rarr;</p>
+                  </div>
+                </div>
+
+                <!-- Firm 22: Placeholder Drainage Engineers -->
+                <div class="item" data-q="placeholder drainage engineers engineering &amp; surveying" data-s="driveway-roading-services-design flood-level-survey" data-l="geelong ballarat bendigo">
+                  <div class="tile firm-tile">
+                    <h3><a href="../contact/?firm=placeholder-drainage-engineers" rel="nofollow">Placeholder Drainage Engineers</a></h3>
+                    <p class="firm-spec"><strong>Engineering & Surveying</strong></p>
+                    <p class="firm-loc">Geelong & Surf Coast, Ballarat, Bendigo</p>
+                    <details class="firm-services">
+                      <summary>Services</summary>
+                      <ul>
+                        <li>Driveway, Roading & Services Design</li>
+                        <li>Flood Level Surveys</li>
+                      </ul>
+                    </details>
+ 
+                    <p class="small firm-cta">Request a quote &rarr;</p>
+                  </div>
+                </div>
+
+                <!-- Firm 23: Sample Roads & Services Design -->
+                <div class="item" data-q="sample roads &amp; services design engineering &amp; surveying" data-s="driveway-roading-services-design land-subdivision" data-l="shepparton wodonga bendigo">
+                  <div class="tile firm-tile">
+                    <h3><a href="../contact/?firm=sample-roads-and-services" rel="nofollow">Sample Roads & Services Design</a></h3>
+                    <p class="firm-spec"><strong>Engineering & Surveying</strong></p>
+                    <p class="firm-loc">Shepparton & Goulburn Valley, Wodonga & North East Victoria, Bendigo</p>
+                    <details class="firm-services">
+                      <summary>Services</summary>
+                      <ul>
+                        <li>Driveway, Roading & Services Design</li>
+                        <li>Land Subdivision</li>
+                      </ul>
+                    </details>
+ 
+                    <p class="small firm-cta">Request a quote &rarr;</p>
+                  </div>
+                </div>
+
+                <!-- Firm 24: Example Retaining Wall Engineers -->
+                <div class="item" data-q="example retaining wall engineers engineering" data-s="retaining-wall-design driveway-roading-services-design" data-l="mornington-peninsula casey-cardinia melbourne">
+                  <div class="tile firm-tile">
+                    <h3><a href="../contact/?firm=example-retaining-walls" rel="nofollow">Example Retaining Wall Engineers</a></h3>
+                    <p class="firm-spec"><strong>Engineering</strong></p>
+                    <p class="firm-loc">Mornington Peninsula, Casey & Cardinia, Melbourne</p>
+                    <details class="firm-services">
+                      <summary>Services</summary>
+                      <ul>
+                        <li>Retaining Wall Design</li>
+                        <li>Driveway, Roading & Services Design</li>
+                      </ul>
+                    </details>
+ 
+                    <p class="small firm-cta">Request a quote &rarr;</p>
+                  </div>
+                </div>
+
+                <!-- Firm 25: Demo Permit Engineering -->
+                <div class="item" data-q="demo permit engineering engineering" data-s="town-planning-permits" data-l="melbourne werribee casey-cardinia">
+                  <div class="tile firm-tile">
+                    <h3><a href="../contact/?firm=demo-permit-engineering" rel="nofollow">Demo Permit Engineering</a></h3>
+                    <p class="firm-spec"><strong>Engineering</strong></p>
+                    <p class="firm-loc">Melbourne, Werribee & Melbourne West, Casey & Cardinia</p>
+                    <details class="firm-services">
+                      <summary>Services</summary>
+                      <ul>
+                        <li>Town Planning & Permits</li>
+                      </ul>
+                    </details>
+ 
+                    <p class="small firm-cta">Request a quote &rarr;</p>
+                  </div>
+                </div>
+
+                <!-- Firm 26: Placeholder Urban Development -->
+                <div class="item" data-q="placeholder urban development surveying &amp; engineering" data-s="town-planning-permits land-subdivision" data-l="geelong ballarat">
+                  <div class="tile firm-tile">
+                    <h3><a href="../contact/?firm=placeholder-urban-development" rel="nofollow">Placeholder Urban Development</a></h3>
+                    <p class="firm-spec"><strong>Surveying & Engineering</strong></p>
+                    <p class="firm-loc">Geelong & Surf Coast, Ballarat</p>
+                    <details class="firm-services">
+                      <summary>Services</summary>
+                      <ul>
+                        <li>Town Planning & Permits</li>
+                        <li>Land Subdivision</li>
+                      </ul>
+                    </details>
+ 
+                    <p class="small firm-cta">Request a quote &rarr;</p>
+                  </div>
+                </div>
+
+                <!-- Firm 27: Sample Subdivision Surveys -->
+                <div class="item" data-q="sample subdivision surveys surveying" data-s="town-planning-permits land-subdivision easements" data-l="gippsland wodonga shepparton">
+                  <div class="tile firm-tile">
+                    <h3><a href="../contact/?firm=sample-subdivision-surveys" rel="nofollow">Sample Subdivision Surveys</a></h3>
+                    <p class="firm-spec"><strong>Surveying</strong></p>
+                    <p class="firm-loc">Gippsland, Wodonga & North East Victoria, Shepparton & Goulburn Valley</p>
+                    <details class="firm-services">
+                      <summary>Services</summary>
+                      <ul>
+                        <li>Town Planning & Permits</li>
+                        <li>Land Subdivision</li>
+                        <li>Easements: Create or Remove</li>
+                      </ul>
+                    </details>
+ 
+                    <p class="small firm-cta">Request a quote &rarr;</p>
+                  </div>
+                </div>
+
+                <!-- Firm 28: Example Development Engineers -->
+                <div class="item" data-q="example development engineers engineering &amp; surveying" data-s="land-subdivision town-planning-permits" data-l="melbourne mornington-peninsula">
+                  <div class="tile firm-tile">
+                    <h3><a href="../contact/?firm=example-development-engineers" rel="nofollow">Example Development Engineers</a></h3>
+                    <p class="firm-spec"><strong>Engineering & Surveying</strong></p>
+                    <p class="firm-loc">Melbourne, Mornington Peninsula</p>
+                    <details class="firm-services">
+                      <summary>Services</summary>
+                      <ul>
+                        <li>Land Subdivision</li>
+                        <li>Town Planning & Permits</li>
+                      </ul>
+                    </details>
+ 
+                    <p class="small firm-cta">Request a quote &rarr;</p>
+                  </div>
+                </div>
+
+                <!-- Firm 29: Demo Site Survey Partners -->
+                <div class="item" data-q="demo site survey partners surveying" data-s="land-subdivision title-amendments easements" data-l="bendigo ballarat geelong">
+                  <div class="tile firm-tile">
+                    <h3><a href="../contact/?firm=demo-site-survey-partners" rel="nofollow">Demo Site Survey Partners</a></h3>
+                    <p class="firm-spec"><strong>Surveying</strong></p>
+                    <p class="firm-loc">Bendigo, Ballarat, Geelong & Surf Coast</p>
+                    <details class="firm-services">
+                      <summary>Services</summary>
+                      <ul>
+                        <li>Land Subdivision</li>
+                        <li>Title Amendments</li>
+                        <li>Easements: Create or Remove</li>
+                      </ul>
+                    </details>
+ 
+                    <p class="small firm-cta">Request a quote &rarr;</p>
+                  </div>
+                </div>
+
+                <!-- Firm 30: Placeholder Site Engineering -->
+                <div class="item" data-q="placeholder site engineering engineering" data-s="land-subdivision driveway-roading-services-design town-planning-permits" data-l="casey-cardinia werribee melbourne">
+                  <div class="tile firm-tile">
+                    <h3><a href="../contact/?firm=placeholder-site-engineering" rel="nofollow">Placeholder Site Engineering</a></h3>
+                    <p class="firm-spec"><strong>Engineering</strong></p>
+                    <p class="firm-loc">Casey & Cardinia, Werribee & Melbourne West, Melbourne</p>
+                    <details class="firm-services">
+                      <summary>Services</summary>
+                      <ul>
+                        <li>Land Subdivision</li>
+                        <li>Driveway, Roading & Services Design</li>
+                        <li>Town Planning & Permits</li>
+                      </ul>
+                    </details>
+ 
+                    <p class="small firm-cta">Request a quote &rarr;</p>
+                  </div>
+                </div>
+
+              </div><!-- /#dlist -->
+            </div><!-- /.scrollbox -->
+          </div><!-- /.scroll-frame -->
+
+          <p class="scroll-hint small" aria-hidden="true">Scroll for more firms &darr;</p>
+        </div><!-- /.scroll-wrap -->
+
+
+        <!-- --------------------------------------------------------
+             REGISTRATION CHECK LINKS
+             -------------------------------------------------------- -->
+        <div class="card">
+          <h2>Check a professional's registration</h2>
+          <p class="small">Before you hire, you can confirm a surveyor or engineer is registered using the official registers below.</p>
+          <ul>
+            <li>
+              <a href="https://www.surveyorsboard.vic.gov.au/content/77/Check-Surveyor-Registered.aspx" target="_blank" rel="noopener noreferrer">Search the Victorian Licensed Surveyor Register →</a>
+            </li>
+            <li>
+              <a href="https://portal.engineersaustralia.org.au/ner/search" target="_blank" rel="noopener noreferrer">Search the Australian National Engineers Register →</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Call to action for professionals -->
+        <p>Are you a surveyor or engineer? <a href="../list-your-business/">List your business</a>.</p>
+
+      </div><!-- /.wrap -->
+
+
+      <!-- --------------------------------------------------------
+           FILTER SCRIPT
+           Hides/shows .item elements based on the search box and the
+           service / location dropdowns, then updates the result count.
+           -------------------------------------------------------- -->
+      <script>
+        (function () {
+          var q = document.getElementById("dq"),   // search input
+              s = document.getElementById("ds"),   // service select
+              l = document.getElementById("dl"),   // location select
+              n = document.getElementById("dn");   // result count text
+
+          function f() {
+            var c = 0;
+
+            document.querySelectorAll("#dlist .item").forEach(function (i) {
+              var ok =
+                // Name match (substring, case-insensitive)
+                (!q.value || i.dataset.q.indexOf(q.value.toLowerCase()) > -1) &&
+                // Service match (whole slug)
+                (!s.value || (" " + i.dataset.s + " ").indexOf(" " + s.value + " ") > -1) &&
+                // Location match (whole slug)
+                (!l.value || (" " + i.dataset.l + " ").indexOf(" " + l.value + " ") > -1);
+
+              i.style.display = ok ? "" : "none";
+              if (ok) c++;
+            });
+
+            n.textContent = c
+              ? c + " firm" + (c > 1 ? "s" : "") + " found"
+              : "No firms match. Try widening your search, or submit an enquiry and we will match you.";
+          }
+
+          // Re-run the filter whenever any control changes
+          [q, s, l].forEach(function (e) {
+            e.addEventListener("input", f);
+          });
+        })();
+      </script>
+
+    </div><!-- /.inner -->
+  </main>
+
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="wrap foot">
+
+      <!-- About / contact -->
+      <div>
+        <strong>Land Development Consultants</strong>
+        <p class="small">Victoria, Australia<br>Connecting clients to licensed professionals.</p>
+        <p><a href="mailto:services@blueweta.com">services@blueweta.com</a></p>
+      </div>
+
+      <!-- Services links -->
+      <div>
+        <strong>Services</strong>
+        <ul>
+          <li><a href="../services/land-subdivision/">Land Subdivision</a></li>
+          <li><a href="../services/boundary-marking-disputes/">Boundary Marking & Re-establishment</a></li>
+          <li><a href="../services/easements/">Easements: Create or Remove</a></li>
+          <li><a href="../services/title-amendments/">Title Amendments</a></li>
+          <li><a href="../services/feature-and-level-survey/">Feature & Level Surveys</a></li>
+          <li><a href="../services/flood-level-survey/">Flood Level Surveys</a></li>
+          <li><a href="../services/building-set-out/">Building Set-out</a></li>
+        </ul>
+      </div>
+
+      <!-- Locations links -->
+      <div>
+        <strong>Locations</strong>
+        <ul>
+          <li><a href="../locations/melbourne/">Melbourne</a></li>
+          <li><a href="../locations/geelong/">Geelong & Surf Coast</a></li>
+          <li><a href="../locations/ballarat/">Ballarat</a></li>
+          <li><a href="../locations/bendigo/">Bendigo</a></li>
+          <li><a href="../locations/mornington-peninsula/">Mornington Peninsula</a></li>
+          <li><a href="../locations/gippsland/">Gippsland</a></li>
+          <li><a href="../locations/shepparton/">Shepparton & Goulburn Valley</a></li>
+        </ul>
+      </div>
+
+      <!-- Company links -->
+      <div>
+        <strong>Company</strong>
+        <ul>
+          <li><a href="../directory/">Directory</a></li>
+          <li><a href="../list-your-business/">List your business</a></li>
+          <li><a href="../about/">About</a></li>
+          <li><a href="../faq/">FAQ</a></li>
+          <li><a href="../contact/">Contact</a></li>
+          <li><a href="../privacy/">Privacy</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Copyright -->
+    <p class="wrap copy small">
+      &copy; <span id="year">2026</span> Land Development Consultants. Connecting clients to licensed professionals.
+    </p>
+  </footer>
+
+
+  <!-- ============================================================
+       SITE SCRIPT: menu toggle, form handling and footer year
+       ============================================================ -->
+  <script src="../js/main.js"></script>
+
+</body>
+
+</html>

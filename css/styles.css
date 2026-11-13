@@ -1,0 +1,204 @@
+/* ==========================================================
+   Land Development Consultants – stylesheet
+   Palette: deep survey navy, wattle gold (Victoria's floral
+   emblem), cool grey tint. Edit the variables to rebrand.
+   ========================================================== */
+:root {
+  --navy: #14284B;       /* Banner Background*/
+  --navy-2: #2d6da3;     /* lighter navy for lines/hover */
+  --gold: #f0b429;       /* accent / buttons */
+  --gold-dark: #d99a0b;
+  --tint: #eaf0f5;       /* alt section background */
+  --ink: #1a2530;        /* body text */
+  --muted: #55646f;
+  --line: #cfd9e1;
+  --radius: 10px;
+  --font-head: "Inter", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Inter", "Segoe UI", system-ui, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 72px; } /* offset for sticky header */
+body { margin: 0; font: 17px/1.6 var(--font-body); color: var(--ink); background: #fff; }
+img { max-width: 100%; }
+a { color: inherit; }
+.wrap { width: min(1100px, 100% - 40px); margin-inline: auto; }
+
+/* Keyboard focus is always visible */
+:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+.skip { position: absolute; left: -999px; background: var(--gold); padding: 8px 14px; z-index: 100; }
+.skip:focus { left: 10px; top: 10px; }
+
+/* ---------- Header ---------- */
+.site-header { position: sticky; top: 0; z-index: 50; background: var(--navy); color: #fff; }
+.bar { display: flex; align-items: center; justify-content: space-between; min-height: 64px; }
+.logo { display: flex; align-items: center; gap: 10px; text-decoration: none; font: 700 1.05rem var(--font-head); }
+.nav { display: flex; align-items: center; gap: 24px; }
+.nav a { text-decoration: none; font-weight: 500; }
+.nav a:not(.btn):hover { color: var(--gold); }
+.menu-btn { display: none; background: none; border: 1px solid var(--navy-2); color: #fff; padding: 8px 14px; border-radius: 6px; font: inherit; }
+
+/* ---------- Buttons ---------- */
+.btn { display: inline-block; background: var(--gold); color: var(--navy); border: 0; border-radius: var(--radius);
+  padding: 14px 24px; font: 700 1rem var(--font-body); text-decoration: none; cursor: pointer; text-align: center; }
+.btn:hover { background: var(--gold-dark); }
+.btn-small { padding: 8px 16px; }
+
+/* ---------- Hero ---------- */
+.hero { background: var(--navy) url("../images/contours.svg") center / 120% auto; color: #fff; padding: 64px 0 80px; position: relative; }
+/* Contour lines are drawn white in the SVG; this overlay keeps them faint */
+.hero::before { content: ""; position: absolute; inset: 0; background: rgba(37, 77, 121, 0.94); }
+.hero-grid { position: relative; display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 48px; align-items: center; }
+h1 { font: 800 clamp(2.2rem, 5vw, 3.6rem)/1.05 var(--font-head); margin: 0 0 20px; letter-spacing: -0.02em; }
+.lead { font-size: 1.2rem; max-width: 34em; color: #d6e1ea; }
+.ticks { list-style: none; padding: 0; margin: 24px 0 0; display: grid; gap: 8px; }
+.ticks li::before { content: "✓"; color: var(--gold); font-weight: 700; margin-right: 10px; }
+
+/* Quote form card */
+.quote { background: #fff; color: var(--ink); padding: 28px; border-radius: 14px; box-shadow: 0 20px 50px rgba(0,0,0,.35); }
+.quote h2 { font: 700 1.4rem var(--font-head); margin: 0 0 16px; }
+.quote label { display: block; font-weight: 600; font-size: .9rem; margin: 14px 0 4px; }
+.quote input, .quote select, .quote textarea { width: 100%; padding: 12px; border: 1px solid #9fb0bd; border-radius: 8px; font: inherit; background: #fff; }
+.quote .btn { width: 100%; margin-top: 20px; }
+.form-msg { min-height: 1.4em; margin: 10px 0 0; font-size: .9rem; color: var(--muted); }
+.form-msg.error { color: #b3261e; }
+
+/* ---------- Sections ---------- */
+.section { padding: 80px 0; }
+.tint { background: var(--tint); }
+.section-title { font: 800 clamp(1.7rem, 3.5vw, 2.4rem)/1.15 var(--font-head); margin: 0 0 16px; letter-spacing: -0.01em; }
+.section-intro { max-width: 38em; color: var(--muted); margin: 0 0 40px; }
+
+/* Services: group label left, list right, separated by a rule */
+.group { display: grid; grid-template-columns: 220px 1fr; gap: 32px; padding: 28px 0; border-top: 2px solid var(--navy); }
+.group h3 { font: 700 1.3rem var(--font-head); margin: 0; }
+.svc { list-style: none; margin: 0; padding: 0; columns: 2; column-gap: 40px; }
+.svc li { break-inside: avoid; padding: 8px 0; border-bottom: 1px solid var(--line); }
+
+/* How it works */
+.steps { list-style: none; counter-reset: step; display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; padding: 0; margin: 32px 0 0; }
+.steps li { counter-increment: step; }
+.steps li::before { content: counter(step); display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%;
+  background: var(--navy); color: var(--gold); font: 700 1.2rem var(--font-head); margin-bottom: 14px; }
+.steps h3 { font: 700 1.2rem var(--font-head); margin: 0 0 6px; }
+.steps p { margin: 0; color: var(--muted); }
+
+/* Who we are */
+.split { display: grid; grid-template-columns: 1fr 1.2fr; gap: 56px; align-items: start; }
+.big { font: 700 1.6rem/1.25 var(--font-head); color: var(--gold); margin: 0; }
+.prose p { margin: 0 0 1em; max-width: 36em; }
+.victoria { background: var(--navy); color: #fff; }
+.victoria .btn { margin-top: 8px; }
+
+/* ---------- Footer ---------- */
+.site-footer { background: #0a1827; color: #b9c7d3; padding: 40px 0; }
+.foot { display: grid; grid-template-columns: 1fr 1fr 1.4fr; gap: 32px; }
+.foot p { margin: 0; }
+.small { font-size: .85rem; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 860px) {
+  .hero-grid, .split, .steps, .foot { grid-template-columns: 1fr; }
+  .group { grid-template-columns: 1fr; gap: 12px; }
+  .svc { columns: 1; }
+  .menu-btn { display: block; }
+  .nav { display: none; position: absolute; top: 64px; left: 0; right: 0; background: var(--navy); flex-direction: column; align-items: flex-start; padding: 20px; }
+  .nav.open { display: flex; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* ==========================================================
+   Added for the SEO pages (services, locations, directory, etc.)
+   Everything above is the original homepage styling.
+   ========================================================== */
+
+/* Inner pages: padded wrapper, headings and narrow single-column width */
+.inner { padding: 56px 0 72px; }
+.inner h1 { font-size: clamp(1.9rem, 4vw, 2.7rem); line-height: 1.15; margin: .2em 0 .5em; color: var(--navy); }
+.inner h2 { font: 700 1.45rem var(--font-head); margin: 1.8em 0 .5em; color: var(--navy); }
+.inner h2:first-child { margin-top: 0; }
+.inner .ticks { margin: 1em 0; }
+.inner .lead { color: var(--muted); }
+.narrow { width: min(780px, 100% - 40px); margin-inline: auto; }
+
+/* Two-column page layout: content left, enquiry form right (form stays in view while scrolling) */
+.pg { display: grid; grid-template-columns: 1.25fr 1fr; gap: 48px; align-items: start; }
+.pg aside .quote { position: sticky; top: 88px; border: 1px solid var(--line); box-shadow: 0 10px 30px rgba(20,40,75,.12); }
+
+/* Breadcrumb trail above page headings */
+.crumbs { font-size: .85rem; color: var(--muted); margin-bottom: 10px; }
+.crumbs a { text-decoration: none; }
+.crumbs a:hover { color: var(--navy-2); }
+
+/* Card grid and cards (services, locations, firms) */
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 20px; margin: 24px 0; }
+.tile { display: block; border: 1px solid var(--line); border-top: 3px solid var(--navy); border-radius: var(--radius); padding: 22px; text-decoration: none; background: #fff; transition: .2s; }
+.tile:hover { box-shadow: 0 8px 24px rgba(20,40,75,.14); transform: translateY(-2px); }
+.tile h3 { font: 700 1.1rem var(--font-head); margin: 0 0 6px; color: var(--navy); }
+.tile p { margin: 0; color: var(--muted); font-size: .93rem; }
+.svc-cards { margin-top: 8px; }
+
+/* FAQ accordions (<details>) */
+details { border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 18px; margin: 10px 0; background: #fff; }
+summary { cursor: pointer; font-weight: 600; color: var(--navy); }
+details p { margin: .7em 0 0; color: var(--muted); }
+
+/* Links in the Victoria section (gold on navy) */
+.links a { color: var(--navy-2); }
+.victoria .links a { color: var(--gold); }
+
+/* Directory filter box: Search / Service / Location sit in a row with generous spacing */
+.filters { margin: 24px 0; padding: 28px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 32px; }
+.filters label { margin: 0; }
+.filters input, .filters select { margin-top: 10px; }
+
+/* Footer: four columns plus copyright line */
+.foot { grid-template-columns: 1.3fr 1fr 1fr .8fr; }
+.foot ul { list-style: none; padding: 0; margin: 6px 0 0; }
+.foot li { margin: 5px 0; font-size: .92rem; }
+.foot a { text-decoration: none; }
+.foot a:hover { color: #fff; text-decoration: underline; }
+.foot strong { color: #fff; }
+.copy { margin-top: 28px; padding-top: 18px; border-top: 1px solid rgba(255,255,255,.12); text-align: center; }
+
+/* Mobile: stack columns */
+@media (max-width: 860px) {
+  .pg { grid-template-columns: 1fr; }
+  .pg aside .quote { position: static; }
+  .foot { grid-template-columns: 1fr 1fr; }
+  .filters { gap: 20px; }
+}
+
+
+/* ==========================================================
+   Firm cards and scrolling firm lists (directory, service and location pages).
+   Adds new classes only. The search / service / location bar is not touched.
+   ========================================================== */
+.firm-tile { position: relative; align-self: start; }
+.firm-tile h3 { margin: 0 0 6px; }
+.firm-tile h3 a { color: inherit; text-decoration: none; }
+.firm-tile h3 a::after { content: ""; position: absolute; inset: 0; border-radius: var(--radius); } /* whole card is clickable */
+.firm-tile .firm-spec, .firm-tile .firm-loc { margin: 0; font-size: .92rem; }
+.firm-tile .firm-loc { margin-top: 2px; }
+.firm-tile .firm-services { position: relative; z-index: 1; margin-top: 10px; border: 0; background: none; padding: 0; box-shadow: none; }
+.firm-tile .firm-services summary { cursor: pointer; list-style: none; font-size: .92rem; font-weight: 400; color: inherit; border: 0; background: none; padding: 0; }
+.firm-tile .firm-services summary:focus:not(:focus-visible) { outline: none; }
+.firm-tile .firm-services summary::-webkit-details-marker { display: none; }
+.firm-tile .firm-services summary::after { content: " \25B8"; }
+.firm-tile .firm-services[open] summary::after { content: " \25BE"; }
+.firm-tile .firm-services ul { margin: 6px 0 0; padding: 0 0 0 18px; border: 0; background: none; font-size: .88rem; font-weight: 400; }
+.firm-tile .firm-services li { font-weight: 400; }
+/* Request a quote keeps its original look; View profile (claimed firms only) is bolder and sits above it */
+.firm-tile .firm-cta { margin-top: 10px; font-weight: 400; color: var(--navy-2); }
+.firm-tile .firm-profile { position: relative; z-index: 1; display: block; margin: 10px 0 0; font-size: .95rem; font-weight: 700; color: var(--navy-2); text-decoration: none; }
+.firm-tile .firm-profile:hover { text-decoration: underline; }
+.scroll-wrap { margin: 24px 0; }
+.scroll-frame { position: relative; }
+.scrollbox { max-height: 780px; overflow-y: auto; padding: 12px; margin: -12px; } /* padding stops card shadows being clipped */
+.scrollbox .grid { margin: 0; }
+.scroll-frame::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 90px; pointer-events: none; opacity: 0; transition: opacity .2s;
+  background: linear-gradient(to bottom, rgba(255,255,255,0), #fff 85%); }
+.scroll-wrap.can-scroll:not(.at-end) .scroll-frame::after { opacity: 1; }
+.scroll-hint { display: none; text-align: center; margin: 10px 0 0; color: var(--muted); }
+.scroll-wrap.can-scroll:not(.at-end) .scroll-hint { display: block; }
+@media (max-width: 600px) { .scrollbox { max-height: 70vh; } }
