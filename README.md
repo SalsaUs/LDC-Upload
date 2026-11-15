@@ -20,6 +20,7 @@ noforward should be attached to links to company websites (IF they are to be att
 
 ## Regenerate pages
 `python3 build.py` (keep the three .py files in the same folder).
+Hand edited now, however when more firms are added, build.py may need to be updated to mass update and quality check more items.
 
 ## Go live
 1. Upload everything to the repo root and enable GitHub Pages.
