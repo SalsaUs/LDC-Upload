@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+  <head>
+
+    <!-- ============================================================
+         META & SEO
+         ============================================================ -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Get Matched with a Surveyor or Engineer | Contact</title>
+    <meta name="description" content="Send one enquiry and get introduced to licensed Victorian surveyors and engineers. Free, no obligation.">
+    <link rel="canonical" href="https://salsaus.github.io/LDC-Directory/contact/">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <meta name="geo.region" content="AU-VIC">
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Get Matched with a Surveyor or Engineer | Contact">
+    <meta property="og:description" content="Send one enquiry and get introduced to licensed Victorian surveyors and engineers. Free, no obligation.">
+    <meta property="og:url" content="https://salsaus.github.io/LDC-Directory/contact/">
+    <meta property="og:image" content="https://salsaus.github.io/LDC-Directory/images/BlueWeta.png">
+    <meta property="og:locale" content="en_AU">
+    <meta name="twitter:card" content="summary">
+
+    <!-- ============================================================
+         ICONS, FONTS & STYLES
+         ============================================================ -->
+    <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="../images/Logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- ============================================================
+         STRUCTURED DATA (JSON-LD): Organization + Breadcrumbs
+         ============================================================ -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://salsaus.github.io/LDC-Directory/#org",
+            "name": "Land Development Consultants",
+            "url": "https://salsaus.github.io/LDC-Directory/",
+            "logo": "https://salsaus.github.io/LDC-Directory/images/BlueWeta.png",
+            "email": "services@blueweta.com",
+            "areaServed": {
+              "@type": "State",
+              "name": "Victoria"
+            }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://salsaus.github.io/LDC-Directory/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Contact",
+                "item": "https://salsaus.github.io/LDC-Directory/contact/"
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+
+    <!-- ============================================================
+         HEADER & NAVIGATION
+         ============================================================ -->
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap bar">
+        <a class="logo" href="../" aria-label="Land Development Consultants home"><img src="../images/BlueWeta.png" alt="Land Development Consultants" height="48"> Land Development Consultants</a><button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+        <nav id="nav" class="nav" aria-label="Main"><a href="../directory/">Directory</a><a href="../services/">Services</a><a href="../locations/">Locations</a><a href="../about/">About</a><a href="../faq/">FAQ</a><a class="btn btn-small" href="../contact/">Get matched</a></nav>
+      </div>
+    </header>
+
+    <!-- ============================================================
+         MAIN CONTENT
+         ============================================================ -->
+    <main id="main">
+      <div class=inner>
+        <div class="wrap narrow">
+
+          <!-- Page title (the script below changes it when the page is opened from a firm's card) -->
+          <h1 id="contact-h1">Get Matched with a Licensed Professional</h1>
+
+          <!-- --------------------------------------------------------
+               QUOTE FORM
+               Submits to Formspree; js/main.js handles sending and shows the result message.
+               When the page is opened from a firm's card, the script below adds a hidden 'firm' field.
+               -------------------------------------------------------- -->
+          <form class="quote" id="quote" action="https://formspree.io/f/xwllwjvz" method="POST" novalidate>
+            <h2>What do you need help with?</h2>
+
+            <!-- Service -->
+            <label for="service">Service</label>
+            <select id="service" name="service" required>
+              <option value="">Choose a service…</option>
+              <option>Land Subdivision</option>
+              <option>Boundary Marking & Re-establishment</option>
+              <option>Easements: Create or Remove</option>
+              <option>Title Amendments</option>
+              <option>Feature & Level Surveys</option>
+              <option>Flood Level Surveys</option>
+              <option>Building Set-out</option>
+              <option>Laser Scanning & 3D Modelling</option>
+              <option>Aerial Drone Survey</option>
+              <option>Volume Surveys</option>
+              <option>Retaining Wall Design</option>
+              <option>Driveway, Roading & Services Design</option>
+              <option>Town Planning & Permits</option>
+              <option>Geotechnical Testing</option>
+              <option>Other</option>
+            </select>
+
+            <!-- Site address -->
+            <label for="suburb">Address of your site</label>
+            <input id="suburb" name="suburb" type="text" autocomplete="postal-code" placeholder="e.g. Ballarat 3350" required>
+
+            <!-- Email -->
+            <label for="email">Your email</label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+
+            <!-- Message (starts with the firm's name when opened from a firm's card) -->
+            <label for="details">Tell us what you want</label>
+            <textarea id="details" name="details" rows="3"></textarea>
+
+            <!-- Submit -->
+            <button class="btn" type="submit">Get matched with a professional</button>
+
+            <!-- Result message (filled in by js/main.js) -->
+            <p class="form-msg" id="form-msg" role="status" aria-live="polite"></p>
+          </form>
+
+          <!-- Direct email option -->
+          <p>Or email <a href="mailto:services@blueweta.com">services@blueweta.com</a></p>
+        </div>
+
+        <!-- --------------------------------------------------------
+             FIRM QUOTE SCRIPT
+             Runs when the page is opened from a firm card (?firm=slug&service=slug):
+             sets the heading and message, pre-selects the service and adds the firm to the enquiry.
+             -------------------------------------------------------- -->
+        <script>
+          (function () {
+            // Names the quote links can use. build.py rewrites this list from the firm and service data,
+            // so rebuild the site (and copy contact/index.html across) whenever the firm list changes.
+            var D = {
+              "firms": {
+                "360-land-solutions": "360 Land Solutions",
+                "stacey-surveying": "Stacey Surveying",
+                "avian": "Avian",
+                "breese-pitt-dixon": "Breese Pitt Dixon",
+                "goodison-surveying": "Goodison Surveying",
+                "chin-land-consultants": "Chin Land Consultants",
+                "cossill-and-webley": "Cossill & Webley",
+                "craig-civil-design": "Craig Civil Design",
+                "creo-civil": "Creo Civil",
+                "wsp": "WSP",
+                "dalton-consulting-engineers": "Dalton Consulting Engineers",
+                "smith-land-consulting": "Smith Land Consulting",
+                "klm-spatial": "KLM Spatial",
+                "land-surveys": "Land Surveys",
+                "reeds-consulting": "Reeds Consulting",
+                "head-and-humphreys-land-consultants": "Head & Humphreys Land Consultants",
+                "geelong-land-surveyors": "Geelong Land Surveyors",
+                "spiire": "Spiire",
+                "swanson-surveying": "Swanson Surveying",
+                "dickson-hearn": "Dickson Hearn",
+                "site-geotechnical": "Site Geotechnical",
+                "melbourne-geotechnical": "Melbourne Geotechnical",
+                "inland-geo": "Inland Geo",
+                "yarra-geotechnics": "Yarra Geotechnics",
+                "t-cooper-and-associates": "T Cooper & Associates",
+                "peak-surveyors": "Peak Surveyors",
+                "mark-potter-land-surveyor": "Mark Potter Land Surveyor",
+                "ferguson-perry-surveying": "Ferguson Perry Surveying",
+                "mg-land-surveyors": "MG Land Surveyors"
+              },
+              "services": {
+                "land-subdivision": "Land Subdivision",
+                "boundary-marking-disputes": "Boundary Marking & Re-establishment",
+                "easements": "Easements: Create or Remove",
+                "title-amendments": "Title Amendments",
+                "feature-and-level-survey": "Feature & Level Surveys",
+                "flood-level-survey": "Flood Level Surveys",
+                "building-set-out": "Building Set-out",
+                "laser-scanning-3d-modelling": "Laser Scanning & 3D Modelling",
+                "aerial-drone-survey": "Aerial Drone Survey",
+                "volume-surveys": "Volume Surveys",
+                "retaining-wall-design": "Retaining Wall Design",
+                "driveway-roading-services-design": "Driveway, Roading & Services Design",
+                "town-planning-permits": "Town Planning & Permits",
+                "geotechnical-testing": "Geotechnical Testing"
+              }
+            };
+
+            var p = new URLSearchParams(location.search),   // the ?firm=...&service=... part of the address
+                k = p.get("firm"),                           // firm slug from the card that was clicked
+                o = Object.prototype.hasOwnProperty;
+
+            // Only carry on for a firm in the list above (anything else is ignored)
+            if (!k || !o.call(D.firms, k)) return;
+
+            var n   = D.firms[k],                            // the firm's name
+                h   = document.getElementById("contact-h1"), // page heading
+                f   = document.getElementById("quote"),      // the form
+                t   = document.getElementById("details"),    // "Tell us what you want" box
+                sel = document.getElementById("service"),    // service dropdown
+                sv  = p.get("service");                      // optional service slug from the page the card was on
+
+            // Heading and browser tab title
+            if (h) h.textContent = "Request a quote from " + n;
+            document.title = "Request a quote from " + n + " | Land Development Consultants";
+
+            // Start the message with the firm's name
+            if (t) t.value = "Request a quote from " + n + ". ";
+
+            // Send the firm's name with the enquiry as a hidden form field
+            var i = document.createElement("input");
+            i.type = "hidden"; i.name = "firm"; i.value = n;
+            f.appendChild(i);
+
+            // Pre-select the service if the link came from a service page
+            if (sv && sel && o.call(D.services, sv)) sel.value = D.services[sv];
+          })();
+        </script>
+      </div>
+    </main>
+
+    <!-- ============================================================
+         FOOTER
+         ============================================================ -->
+    <footer class="site-footer">
+      <div class="wrap foot">
+
+        <!-- About / contact -->
+        <div>
+          <strong>Land Development Consultants</strong>
+          <p class="small">Victoria, Australia<br>Connecting clients to licensed professionals.</p>
+          <p><a href="mailto:services@blueweta.com">services@blueweta.com</a></p>
+        </div>
+
+        <!-- Services links -->
+        <div>
+          <strong>Services</strong>
+          <ul>
+            <li><a href="../services/land-subdivision/">Land Subdivision</a></li>
+            <li><a href="../services/boundary-marking-disputes/">Boundary Marking & Re-establishment</a></li>
+            <li><a href="../services/easements/">Easements: Create or Remove</a></li>
+            <li><a href="../services/title-amendments/">Title Amendments</a></li>
+            <li><a href="../services/feature-and-level-survey/">Feature & Level Surveys</a></li>
+            <li><a href="../services/flood-level-survey/">Flood Level Surveys</a></li>
+            <li><a href="../services/building-set-out/">Building Set-out</a></li>
+          </ul>
+        </div>
+
+        <!-- Locations links -->
+        <div>
+          <strong>Locations</strong>
+          <ul>
+            <li><a href="../locations/melbourne/">Melbourne</a></li>
+            <li><a href="../locations/geelong/">Geelong & Surf Coast</a></li>
+            <li><a href="../locations/ballarat/">Ballarat</a></li>
+            <li><a href="../locations/bendigo/">Bendigo</a></li>
+            <li><a href="../locations/mornington-peninsula/">Mornington Peninsula</a></li>
+            <li><a href="../locations/gippsland/">Gippsland</a></li>
+            <li><a href="../locations/shepparton/">Shepparton & Goulburn Valley</a></li>
+          </ul>
+        </div>
+
+        <!-- Company links -->
+        <div>
+          <strong>Company</strong>
+          <ul>
+            <li><a href="../directory/">Directory</a></li>
+            <li><a href="../list-your-business/">List your business</a></li>
+            <li><a href="../about/">About</a></li>
+            <li><a href="../faq/">FAQ</a></li>
+            <li><a href="../contact/">Contact</a></li>
+            <li><a href="../privacy/">Privacy</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Copyright -->
+      <p class="wrap copy small">&copy; <span id="year">2026</span> Land Development Consultants. Connecting clients to licensed professionals.</p>
+    </footer>
+
+    <!-- ============================================================
+         SITE SCRIPT: menu toggle, form handling and footer year
+         ============================================================ -->
+    <script src="../js/main.js"></script>
+  </body>
+</html>
